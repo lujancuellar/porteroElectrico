@@ -17,13 +17,13 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-4 border border-dark">
-                <p id="primerVisor">Visor 1. Piso.</p>
+                <p id="visor1"></p>
             </div>
             <div class="col-sm-4">
                 Este debe ser anulado
             </div>
             <div class="col-sm-4 border border-dark">
-                <p>Visor 2. Depto.</p>
+                <p id="visor2"></p>
             </div>
         </div>
     </div>
@@ -31,53 +31,56 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-4 border border-dark">
-            <button id="numero1" value="1" onclick="primerNumero()(document.getElementById('numero1').value)">Boton 1</input>
+            <input type="button" id="num1" onclick="presionarBoton(this)" value="1">
         </div>
         <div class="col-sm-4 border border-dark">
-            <button id="numero2" value="2" onclick="segundoNumero()(document.getElementById('numero2').value)">Boton 2</button>
+            <input type="button" id="num2" onclick="presionarBoton(this)" value="2">
         </div>
         <div class="col-sm-4 border border-dark">
-            <button>Boton 3</button>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-4 border border-dark">
-            <button>Boton 4</button>
-        </div>
-        <div class="col-sm-4 border border-dark">
-            <button>Boton 5</button>
-        </div>
-        <div class="col-sm-4 border border-dark">
-            <button>Boton 6</button>
+            <input type="button" id="num3" onclick="presionarBoton(this)" value="3">
         </div>
     </div>
 </div>
 <div class="container">
     <div class="row">
         <div class="col-sm-4 border border-dark">
-            <button>Boton 7</button>
+            <input type="button" id="num4" onclick="presionarBoton(this)" value="4">
         </div>
         <div class="col-sm-4 border border-dark">
-            <button>Boton 8</button>
+            <input type="button" id="num5" onclick="presionarBoton(this)" value="5">
         </div>
         <div class="col-sm-4 border border-dark">
-            <button>Boton 9</button>
+            <input type="button" id="num6" onclick="presionarBoton(this)" value="6">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 border border-dark">
+            <input type="button" id="num7" onclick="presionarBoton(this)" value="7">
+        </div>
+        <div class="col-sm-4 border border-dark">
+            <input type="button" id="num8" onclick="presionarBoton(this)" value="8">
+        </div>
+        <div class="col-sm-4 border border-dark">
+            <input type="button" id="num9" onclick="presionarBoton(this)" value="9">
         </div>
     </div>
 </div><div class="container">
     <div class="row">
         <div class="col-sm-4 border border-dark">
-            <button>Boton 0</button>
+            <input type="button" id="num0" onclick="presionarBoton(this)" value="0">
         </div>
         <div class="col-sm-4 border border-dark">
-            <button>Boton Llamar</button>
+            <input type="button" id="llamar" onclick="llamarAlDepto()" value="Llamar">
         </div>
         <div class="col-sm-4 border border-dark">
-            <button>Boton Borrar</button>
+            <input type="button" id="borrar" onclick="limpiarVisores()" value="Borrar">
         </div>
     </div>
+</div>
+<div>
+    <p id="llamar"></p>
 </div>
 
 </html>

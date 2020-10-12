@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css" type="text/css">
 <script src="portero.js"></script>
-    <title>Portero Electrico</title>
+    <title>Portero Eléctrico</title>
 </head>
 <body>
     <div class="container">
@@ -20,7 +20,6 @@
                 <p id="visor1"></p>
             </div>
             <div class="col-sm-4">
-                Este debe ser anulado
             </div>
             <div class="col-sm-4 border border-dark">
                 <p id="visor2"></p>
@@ -72,15 +71,19 @@
             <input type="button" id="num0" onclick="presionarBoton(this)" value="0">
         </div>
         <div class="col-sm-4 border border-dark">
-            <input type="button" id="llamar" onclick="llamarAlDepto()" value="Llamar">
+            <input type="button" id="llamar" onclick="llamarDepto()" value="Llamar">
         </div>
         <div class="col-sm-4 border border-dark">
             <input type="button" id="borrar" onclick="limpiarVisores()" value="Borrar">
         </div>
     </div>
 </div>
-<div>
-    <p id="llamar"></p>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <p id="llamando"></p>
+        </div>
+    </div>
 </div>
 
 </html>

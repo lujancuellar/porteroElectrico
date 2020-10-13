@@ -1,8 +1,13 @@
 function presionarBoton(button) {
-    let numero = button.value;
-    document.getElementById("visor1").innerHTML += numero;
-    document.getElementById("visor2").innerHTML += numero;
-}
+    let primerVisor = button.value; 
+    let segundoVisor = button.value; 
+    if (primerVisor <= 9 ) {
+        document.getElementById("visor1").innerHTML += primerVisor; 
+    }
+    if (segundoVisor <= 9) {
+        document.getElementById("visor2").innerHTML += segundoVisor;
+    }
+}  
 
 function llamarDepto() {
     

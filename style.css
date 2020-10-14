@@ -1,7 +1,54 @@
 .container {
-    background-color: lightgreen;
+    background-image: linear-gradient(lightskyblue, white);
     border-color: black;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+h1 {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-top: 7px;
+    font-size: 2em;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+
+}
+.row {
+    height: 90px;
+}
+
+.btn {
     margin-top: 15px;
-    
+    margin-left: 65px;
+}
+
+#piso {
+      margin-left: 15px;
+      margin-top: 25px;
+      margin-right: 40px;
+      text-transform: uppercase;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#depto {
+    margin-left: 15px;
+    margin-top: 25px;
+    margin-right: 40px;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#llamando {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
 }

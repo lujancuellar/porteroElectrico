@@ -1,19 +1,27 @@
-function presionarBoton(button) {
-    let primerVisor = button.value; 
-    let segundoVisor = button.value; 
-    if (primerVisor <= 9 ) {
-        document.getElementById("visor1").innerHTML += primerVisor; 
-    }
-    if (segundoVisor <= 9) {
-        document.getElementById("visor2").innerHTML += segundoVisor;
-    }
+function presionarBoton(boton) {
+   let valor = boton.innerHTML;
+   let piso = document.getElementById("piso").value;
+   let depto = document.getElementById("depto").value;
+   if (piso.length < 2) {
+       document.getElementById("piso").value = piso + valor;
+   } else if (depto.length < 1) {
+    document.getElementById("depto").value = depto + valor;
+   }
 }  
 
 function llamarDepto() {
-    
+   let piso = document.getElementById("piso").value;
+   let depto = document.getElementById("depto").value;
+
+   if (piso < 48 && depto < 6) {
+       document.getElementById("llamando").innerHTML = "Lllamando al: " + "piso " + piso + " y departamento " + depto;
+   } else {
+    document.getElementById("llamando").innerHTML = "Departamento o piso invalido";
+   }
 }
 
 function limpiarVisores() {
-    document.getElementById("visor1").innerHTML = "";
-    document.getElementById("visor2").innerHTML = "";
+    document.getElementById("piso").value = "";
+    document.getElementById("depto").value = "";
+    document.getElementById("llamando").innerHTML = "";
 }

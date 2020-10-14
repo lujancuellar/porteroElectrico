@@ -13,12 +13,11 @@ function llamarDepto() {
    let piso = document.getElementById("piso").value;
    let depto = document.getElementById("depto").value;
 
-   if (piso < 48 && depto < 6) {
+   if (piso < 49 && depto < 7) {
        document.getElementById("llamando").innerHTML = "Llamando al: " + "piso " + piso + " y departamento " + depto;
    } else {
     document.getElementById("llamando").innerHTML = "Departamento o piso inválido";
-   }
-}
+   }}
 
 function limpiarVisores() {
     document.getElementById("piso").value = "";

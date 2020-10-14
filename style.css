@@ -1,8 +1,5 @@
 .container {
-    background-image: linear-gradient(lightskyblue, white);
-    border-color: black;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    
 }
 h1 {
     text-align: center;
@@ -22,6 +19,8 @@ h2 {
 }
 .row {
     height: 90px;
+    background-image: linear-gradient(lightskyblue, white);
+    border-color: black;
 }
 
 .btn {
